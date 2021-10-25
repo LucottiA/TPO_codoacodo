@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: quicksand;
+ 
+}
+.logo-1{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+h1 {
+    font-size: 2rem;
+    justify-items: center;
+}
+h2 {
+  font-size: 2rem;
+  cursor: pointer;
+ 
+  
+}
+h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 a:hover {
+ color: rgb(163,198,18);
+ transition: all 0.3s ease 0.3s;
+}
+
+p {
+ 
+  padding: 1% 10% 10% 10%;
+  font-size: 1.5rem;
+  text-align-last: center;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+section {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 0.5rem 10vw;
+  height: 50rem;
+}
+.monte {
+  background: rgb(255, 255, 255);
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+}
+
+/* https://www.shapedivider.app/ */
+.onda {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.onda svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 197px;
+  /* quise aplicar el efecto de transparencia y desenfocado pero no logre que lo tome en la forma curva
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+    backdrop-filter: blur(8px) ;
+    border: 1px solid rgba(255, 255, 255, 0.404);*/
+}
+
+.onda .shape-fill {
+  fill: #ffffff;
+  
+}
+
+.onda-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.onda-1 svg {
+  position: relative;
+  display: block;
+  width: calc(139% + 1.3px);
+  height: 201px;
+}
+
+.onda-1 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.beneficios {
+    margin: 0;
+  background-image: url(/Images/green/tangerines-1208301_1920.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 900px;
+}
+.lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  
+ 
+}
+.lista li {
+
+  list-style: none;
+  
+  background-repeat: no-repeat;
+  font-weight: bold;
+  font-size: 1.5rem;
+ 
+}
+li#item1 {
+padding: 70%;
+margin-inline-end: 160%;
+  background-image: url(/Images/SVG/blob-1.svg);
+  background-size: 25rem;
+  background-position-x: 3rem;
+  background-position-y: 0rem ;
+}
+li#item2 {
+    padding: 70%;
+  background-image: url(/Images/SVG/blob-2.svg);
+  background-size: 25rem;
+  background-position-x: 1rem;
+  background-position-y: 0.2rem ;
+}
+li#item3 {
+    padding: 70%;
+    margin-inline-start: 150%;
+  background-image: url(/Images/SVG/blob-3.svg);
+  background-size: 25rem;
+  background-position-x: -0.5rem;
+  background-position-y: 1rem ;
+  text-align: center;
+}
+
+.productos {
+  background-color: rgb(255, 255, 255);
+  height: 40rem;
+ align-content: space-evenly;
+ padding: 5%;
+}
+
+
+.footer {
+  margin: 0;
+  width: 100%;
+  height: calc(100vh - 590px) !important;
+  border: none;
+  overflow: hidden
+ 
+
+}
+
+
+@media (max-width: 800px) {
+  section {
+    /*position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;*/
+    padding: 0.5rem 2vw;
+    height: 50rem;
+  }
+  p {
+    padding-inline: 5%;
+  }
+  h2 {
+    padding: 15% 5% 5% 5%;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align-last: center;
+    text-align:center; 
+  }
+  .onda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .onda svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 0px);
+    height: 197px;
+  }
+  .onda .shape-fill {
+    fill: #ffffff;
+    /* quise aplicar el efecto de transparencia y desenfocado pero no logre que lo tome en la forma curva
+    
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+        backdrop-filter: blur(8px) ;
+        border: 1px solid rgba(255, 255, 255, 0.404);*/
+  }
+  .beneficios {
+    background-image: url(/Images/green/tangerines-1208301_1920.jpg);
+
+    background-size: 260%;
+    background-attachment: fixed;
+    height: 60%;
+  }
+
+  .lista {
+    margin: 20%;
+display: flex;
+justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column; 
+}
+.lista li {
+
+  list-style: none;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  font-size: 1.5rem;
+ 
+}
+li#item1 {
+ 
+padding: 50%;
+justify-self: center;
+align-self: center;
+margin-inline-end: 0;
+  background-image: url(/Images/SVG/blob-1.svg);
+  background-size: 20rem;
+  background-position-y:-0.5rem;
+
+}
+li#item2 {
+  padding:50%;
+  margin-inline-end: 0;
+  background-image: url(/Images/SVG/blob-2.svg);
+  background-size: 20rem;
+  background-position-x: 0.5rem;
+  background-position-y: -0.5rem
+}
+li#item3 {
+    padding: 50%;
+  margin-inline-start: 0;
+  background-image: url(/Images/SVG/blob-3.svg);
+  background-size: 20rem;
+  background-position-x: -1rem;
+  background-position-y: 0.5rem;
+
+  text-align: center;
+}
+}

@@ -1,0 +1,897 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body {
+  font-family: "quicksand", sans-serif;
+  
+}
+
+h1 {
+  font-size: 2rem;
+  animation: fadeIn linear 2s;
+}
+
+/*ANIMACION*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  justify-items: center;
+  color: rgb(132, 165, 0);
+  animation: fadeIn linear 2s;
+}
+
+h3 {
+  font-size: 1.2rem;
+  justify-items: center;
+  color: rgb(132, 165, 0);
+  animation: fadeIn linear 2s;
+  text-align: center;
+  margin: 15% 10% 0% 12%;
+}
+
+
+p {
+
+  font-size: 1.3rem;
+  text-align-last: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  word-break: break-word;
+  animation: fadeIn linear 2s;
+}
+p a {
+  text-decoration: none;
+  color: rgb(132, 165, 0);
+}
+.grid1 {
+  position: relative;
+  display: grid;
+  grid-gap: 20px;
+  /*padding-inline: 8%;*/
+  grid-template-columns: repeat(12, 1fr);
+
+
+  justify-items: center;
+
+}
+
+.about_text {
+  grid-column-start: 7;
+  grid-column-end:12;
+  margin-top: 190px;
+  align-items: center;
+}
+.about_img {
+  align-items: center;
+  margin-top: 0;
+padding: 35% 5% 15% 5%;
+/*padding-top, padding-right, padding-bottom, padding-left*/
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-items: center;
+
+ background: rgba(255, 255, 255, 0.479);
+ border-radius: 65% 51% 45% 74% / 47% 51% 70% 35%;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.404);
+  animation: fadeIn linear 2s;
+  margin-top: 190px;
+}
+.blobs-0 {
+ 
+  position: absolute;
+  z-index:-1;
+  top: 130px;
+ left: 1px;
+ grid-column: 2 / 2;
+
+  width:220px;
+  height:180px;
+  background-color: rgb(150,193,34);
+
+  border-radius: 42% 58% 33% 67% / 54% 71% 29% 46%;
+ visibility: hidden;
+  animation: blob 5s infinite;
+  border-radius: 46% 54% 28% 72% / 71% 34% 66% 29%;
+}
+.blobs-1{position: absolute;
+  z-index:-1;
+  top: 820px;
+  left: 1px;
+ grid-column: 4 / 4;
+
+  width:220px;
+  height:160px;
+  
+  background-color: rgb(150,193,34);
+  border-radius: 46% 54% 28% 72% / 71% 34% 66% 29%;
+
+animation: fadeIn 3s;
+animation: blob 5s infinite;
+
+}
+/*ANIMACION BLOBS*/
+@keyframes blob {
+    0%{
+      border-radius: 46% 54% 28% 72% / 71% 34% 66% 29%;
+    }
+    
+    25% {
+      visibility: visible;
+      border-radius: 42% 58% 33% 67% / 54% 71% 29% 46%;
+      background-color: rgb(87,186,231);
+        }
+   50%{
+    border-radius: 66% 34% 31% 69% / 49% 30% 70% 51%;
+    background-color: rgb(178,76,151);
+   } 
+
+   75%{
+    border-radius: 52% 48% 51% 49% / 48% 51% 49% 52%;
+    background-color: rgb(242,173,3);
+   }
+      }
+
+
+.about_destacar {
+  color: rgb(132, 165, 0);
+  align-items: start;
+  grid-row: 2;
+  grid-column: span 12;
+
+  /*  grid-column-start: 4;
+    grid-column-end:10;*/
+  
+  
+}
+.about_destacar p {  
+  font-size: 2rem;
+  text-align-last: center;
+  padding-block: 10%;
+  padding-inline: 20%;
+text-align: center;
+}
+
+.about_form {
+  background-image: url("/Images/green/fall-947501_1920.jpg");
+background-size: 100%;
+width: 99vw;
+grid-column-start: 1;
+grid-column-end: 13;
+height: 110vh;
+
+align-items: start;
+justify-content: center;
+   justify-items: center;
+
+}
+/*FORMULARIO*/
+ .form-1 {
+margin-top: 8%;
+margin-left: 28%;
+width: 45%;
+padding-inline: 10%;
+padding-block: 2%;
+height: 80vh;
+  background: rgba(255, 255, 255, 0.61);
+
+  
+  border-radius: 68% 42% 44% 56% / 58% 61% 39% 42%; /*primer 42 era 32*/
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+   backdrop-filter: blur(8px);
+   border: 1px solid rgba(255, 255, 255, 0.404);
+   animation: fadeIn linear 2s;
+}
+
+.form-1 h4 {
+  color: rgb(190, 255, 10);
+  padding: 20% 0% 2% 7%;
+  font-size: 1.5rem;
+font-weight: 900;
+
+}
+
+.form-1 p {
+  text-align: center;
+}
+
+/*Formato de los campos del formato*/
+.form-1 .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-1 form .field input,
+.form-1 .field button,
+.form-1 .textarea textarea{
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  outline: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: 'quicksand', sans-serif;
+  transition: all 0.3s ease;
+}
+.form-1 .field input:focus,
+.form-1 .textarea textarea:focus{
+  border-color: rgb(173, 216, 2);
+  font-family: 'quicksand', sans-serif;
+}
+.form-1 .field input::placeholder,
+.form-1 .textarea textarea::placeholder{
+  color: rgb(156, 156, 156);
+  transition: all 0.3s ease;
+}
+.form-1 .field input:focus::placeholder,
+.form-1 .textarea textarea:focus::placeholder{
+  color: rgb(221, 221, 221);
+}
+
+
+.form-1 .textarea{
+  height: 70px;
+  width: 100%;
+  overflow:hidden;
+}
+.form-1 .textarea textarea{
+  height: 100%;
+  border-radius: 50px;
+  resize: none;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.form-1 .field button{
+  
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  background: rgb(173, 216, 2);
+  transition: all 0.3s ease;
+}
+.form-1 .field button:active{
+  transform: scale(0.97);
+}
+
+
+
+/* https://www.shapedivider.app/ */
+.ondi {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+margin-top: 1%;
+  width: 100%;
+  max-height: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.ondi svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.8px);
+    height: 231px;
+}
+
+.ondi .shape-fill {
+    fill: #ffffff;
+}
+
+.footer {
+  margin: 0;
+  padding-top: 1%;
+  width: 100%;
+  height: calc(103vh - 590px) !important;
+  border: none;
+  overflow: hidden;
+}
+
+
+/*CORTE TABLET*/
+
+@media (max-width: 800px) {
+  body {
+    margin-top: 25px;
+  }
+
+  p {
+
+    font-size: 1.2rem;
+    text-align-last: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-word;
+    animation: fadeIn linear 2s;
+  }
+  p a {
+    text-decoration: none;
+    color: rgb(132, 165, 0);
+  }
+  .grid1 {
+    position: relative;
+    display: grid;
+    grid-gap: 15px;
+    /*padding-inline: 8%;*/
+    grid-template-columns: repeat(12, 1fr);
+  
+  
+    justify-items: center;
+  
+  }
+  
+  .about_text {
+    grid-column-start: 7;
+    grid-column-end:12;
+    margin-top: 190px;
+    align-items: center;
+  }
+  
+  .about_img img{
+    position: absolute;
+    left: 2px;
+    top:250px;
+    padding-left: 8%;
+
+    width: 90%;
+   
+    
+  }
+  .about_img {
+    display: grid;
+    
+    justify-content: center;
+    align-items: center;
+
+    grid-column-start: 2;
+    grid-column-end: 7;
+    align-items: center;
+  
+ /* padding: 5% 22% 15% 50%;/*
+  /*padding-top, padding-right, padding-bottom, padding-left*/
+   background: rgba(255, 255, 255, 0.479);
+   border-radius: 65% 51% 45% 74% / 47% 51% 70% 35%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    animation: fadeIn linear 2s;
+   
+  }
+  h3 {
+    font-size: 1.3rem;
+  
+   
+    color: rgb(132, 165, 0);
+    animation: fadeIn linear 2s;
+
+   inline-size: 150%;
+   padding: 70% 52% 1% 1%;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*.about_img h3 {
+    margin-top:  300px;
+    word-break: keep-all;
+  }*/
+  .blobs-0 {
+   
+    position: absolute;
+    z-index:-1;
+    top: 210px;
+   left: 20px;
+   grid-column: 1 / 1;
+  
+    width:220px;
+    height:190px;
+    background-color: rgb(150,193,34);
+  
+    border-radius: 42% 58% 33% 67% / 54% 71% 29% 46%;
+   visibility: hidden;
+    animation: blob 5s infinite;
+    border-radius: 46% 54% 28% 72% / 71% 34% 66% 29%;
+  }
+  .blobs-1{position: absolute;
+    z-index:-1;
+    top: 910px;
+    left: 35px;
+   grid-column: 3 / 4;
+  
+    width:200px;
+    height:240px;
+    
+    background-color: rgb(150,193,34);
+    border-radius: 46% 54% 28% 72% / 71% 34% 66% 29%;
+  
+  animation: fadeIn 3s;
+  animation: blob 5s infinite;
+  
+  }
+  
+  
+  
+  .about_destacar {
+   
+    color: rgb(132, 165, 0);
+   
+    grid-row: 2;
+
+    
+  
+     grid-column-start: 2;
+      grid-column-end:12;
+    
+    
+  }
+  .about_destacar p {  
+    overflow-wrap: break-word;
+    font-size: 2rem;
+    text-align: center;
+    text-align-last: center;
+    padding: 15% 0% 15% 0%;
+  }
+  
+  .about_form {
+    background-image: url("/Images/green/fall-947501_1920.jpg");
+  background-size: 155%;
+  background-position: right;
+  width: 99vw;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  height: 110vh;
+  
+  align-items: start;
+  justify-content: center;
+     justify-items: center;
+  
+  }
+  /*FORMULARIO*/
+   .form-1 {
+    justify-items: center;
+    align-items: center;
+  margin-top: 22%;
+  margin-left: 16%;
+  width: 65%;
+  padding-inline: 10%;
+  padding-block: 10%;
+  height: 80vh;
+    background: rgba(255, 255, 255, 0.61);
+    border-radius: 68% 42% 44% 56% / 58% 61% 39% 42%;
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+     backdrop-filter: blur(8px);
+     border: 1px solid rgba(255, 255, 255, 0.404);
+     animation: fadeIn linear 2s;
+   
+  }
+  
+  .form-1 h4 {
+margin-left: 40px;
+    color: rgb(178, 241, 3);
+    padding: 2%;
+    font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 1%;
+  }
+  
+  .form-1 p {
+    text-align: center;
+  }
+  
+  /*Formato de los campos del formato*/
+  .form-1 .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-1 form .field input,
+  .form-1 .field button,
+  .form-1 .textarea textarea{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'quicksand', sans-serif;
+    transition: all 0.3s ease;
+  }
+  .form-1 .field input:focus,
+  .form-1 .textarea textarea:focus{
+    border-color: rgb(173, 216, 2);
+    font-family: 'quicksand', sans-serif;
+  }
+  .form-1 .field input::placeholder,
+  .form-1 .textarea textarea::placeholder{
+    color: rgb(156, 156, 156);
+    transition: all 0.3s ease;
+  }
+  .form-1 .field input:focus::placeholder,
+  .form-1 .textarea textarea:focus::placeholder{
+    color: rgb(221, 221, 221);
+  }
+  
+  
+  .form-1 .textarea{
+    height: 70px;
+    width: 100%;
+    overflow:hidden;
+  }
+  .form-1 .textarea textarea{
+    height: 100%;
+    border-radius: 50px;
+    resize: none;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .form-1 .field button{
+   
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    background: rgb(177, 221, 0);
+    transition: all 0.3s ease;
+  }
+  .form-1 .field button:active{
+    transform: scale(0.97);
+  }
+  
+  
+  
+  /* https://www.shapedivider.app/ */
+  .ondi {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+  margin-top: 1.5%;
+    width: 100%;
+    max-height: 100%;
+      overflow: hidden;
+      line-height: 0;
+  }
+  
+  .ondi svg {
+      position: relative;
+      display: block;
+      width: calc(138% + 1.8px);
+      height: 231px;
+  }
+  
+  .ondi .shape-fill {
+      fill: #ffffff;
+  }
+  
+  .footer {
+    padding-top: 2%;
+    margin: 0;
+    width: 100%;
+    height: calc(100vh - 590px) !important;
+    border: none;
+    overflow: hidden;
+  }
+
+
+
+
+}
+/*CORTE CELULAR*/
+
+@media (max-width: 470px) {
+  body {
+    margin-top: 0;
+  }
+
+  
+  p {
+
+    font-size: 1.2rem;
+    text-align-last: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: break-word;
+    animation: fadeIn linear 2s;
+  }
+  p a {
+    text-decoration: none;
+    color: rgb(132, 165, 0);
+  }
+  .grid1 {
+    position: relative;
+    display: grid;
+    grid-gap: 15px;
+    /*padding-inline: 8%;*/
+    grid-template-columns: repeat(12, 1fr);
+  
+  
+    justify-items: center;
+  
+  }
+  
+  .about_text {
+    grid-column-start: 2;
+    grid-column-end:12;
+    margin-top: 190px;
+    align-items: center;
+  }
+  
+  .about_img img{
+    position: absolute;
+    left: 2px;
+    top:50px;
+    padding-top: 10%;
+    padding-inline: 8% 5%;
+
+    width: 90%;
+   
+    
+  }
+  .about_img {
+   margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row: 2;
+    align-items: center;
+  
+ /* padding: 5% 22% 15% 50%;/*
+  /*padding-top, padding-right, padding-bottom, padding-left*/
+   background: rgba(255, 255, 255, 0.479);
+   border-radius: 65% 51% 45% 74% / 47% 51% 70% 35%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    animation: fadeIn linear 2s;
+   
+  }
+  h3 {
+    font-size: 1.3rem;
+  
+   
+    color: rgb(132, 165, 0);
+    animation: fadeIn linear 2s;
+
+   inline-size: 150%;
+   padding: 60% 62% 15% 5%;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*.about_img h3 {
+    margin-top:  300px;
+    word-break: keep-all;
+  }*/
+  .blobs-0 {
+   
+    position: absolute;
+    z-index:-1;
+    top:30px;
+   left: 15px;
+   grid-column: 2 / 2;
+  
+   grid-row: 2;
+  
+    width:150px;
+    height:120px;
+    background-color: rgb(150,193,34);
+  
+    border-radius: 42% 58% 33% 67% / 54% 71% 29% 46%;
+   visibility: hidden;
+    animation: blob 5s infinite;
+    border-radius: 46% 54% 28% 72% / 71% 34% 66% 29%;
+  }
+  .blobs-1{position: absolute;
+    z-index:-1;
+    top: 580px;
+    left: 35px;
+   grid-column: 7 / 7;
+   
+   grid-row: 2;
+  
+    width:130px;
+    height:120px;
+    
+    background-color: rgb(150,193,34);
+    border-radius: 46% 54% 28% 72% / 71% 34% 66% 29%;
+  
+  animation: fadeIn 3s;
+  animation: blob 5s infinite;
+  
+  }
+  
+  
+  
+  .about_destacar {
+   
+    color: rgb(132, 165, 0);
+   
+    grid-row: 3;
+
+    
+  
+     grid-column-start: 2;
+      grid-column-end:12;
+    
+    
+  }
+  .about_destacar p {  
+    overflow-wrap: break-word;
+    font-size: 1.5rem;
+    text-align: center;
+    text-align-last: center;
+    padding: 20% 0% 20% 0%;
+  }
+  
+  .about_form {
+    background-image: url("/Images/green/fall-947501_1920.jpg");
+  background-position: center;
+  background-size: 265%;
+  width: 99vw;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  height: 110vh;
+  
+  align-items: start;
+  justify-content: center;
+     justify-items: center;
+  
+  }
+  /*FORMULARIO*/
+   .form-1 {
+    justify-items: center;
+    align-items: center;
+  margin-top: 30%;
+  margin-left: 5%;
+  width: 85%;
+  padding-inline: 10%;
+  padding-block: 10%;
+  height: 80vh;
+    background: rgba(255, 255, 255, 0.61);
+    border-radius: 68% 42% 44% 56% / 58% 61% 39% 42%;
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+     backdrop-filter: blur(8px);
+     border: 1px solid rgba(255, 255, 255, 0.404);
+     animation: fadeIn linear 2s;
+   
+  }
+  
+  .form-1 h4 {
+margin-left: 7%;
+text-align: center;
+    color: rgb(184, 247, 12);
+
+    font-size: 1.5rem;
+  font-weight: 900;
+  padding-bottom: 1%;
+  }
+  
+  .form-1 p {
+    padding-inline: 4%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  /*Formato de los campos del formato*/
+  .form-1 .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .form-1 form .field input,
+  .form-1 .field button,
+  .form-1 .textarea textarea{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-family: 'quicksand', sans-serif;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  .form-1 .field input:focus,
+  .form-1 .textarea textarea:focus{
+    border-color: rgb(173, 216, 2);
+    font-family: 'quicksand', sans-serif;
+  }
+  .form-1 .field input::placeholder,
+  .form-1 .textarea textarea::placeholder{
+    color: rgb(156, 156, 156);
+    transition: all 0.3s ease;
+  }
+  .form-1 .field input:focus::placeholder,
+  .form-1 .textarea textarea:focus::placeholder{
+    color: rgb(221, 221, 221);
+  }
+  
+  
+  .form-1 .textarea{
+    height: 70px;
+    width: 100%;
+    overflow:hidden;
+  }
+  .form-1 .textarea textarea{
+    height: 100%;
+    border-radius: 50px;
+    resize: none;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .form-1 .field button{
+ 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    background: rgb(175, 219, 0);
+    transition: all 0.3s ease;
+  }
+  .form-1 .field button:active{
+    transform: scale(0.97);
+  }
+  
+  
+  
+  /* https://www.shapedivider.app/ */
+  .ondi {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0;
+  margin-top: 2.6%;
+    width: 100%;
+    max-height: 100%;
+      overflow: hidden;
+      line-height: 0;
+  }
+  
+  .ondi svg {
+      position: relative;
+      display: block;
+      width: calc(175% + 1.8px);
+      height: 200px;
+  }
+  
+  .ondi .shape-fill {
+      fill: #ffffff;
+  }
+  
+  .footer {
+    padding-top: 4%;
+    margin: 0;
+    width: 100%;
+    height: calc(102vh - 590px) !important;
+    border: none;
+    overflow: hidden;
+  }
+
+
+}

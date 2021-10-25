@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<!--    PÁGINA RESPONSIVE CON GRID - 3 CORTES (desktop, tablet, celular)  
+
+        Formulario con Javascript, animaciones con keyframes...   -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Monte Verde</title>
+
+    <!--css y otro-->
+    <link rel="stylesheet" href="/Css/style_menu.css" />
+    <link rel="stylesheet" href="/Css/style_about.css" />
+
+    
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--iconoMV https://convertico.com/-->
+    <link rel="icon" href="/Images/iconMV.ico" />
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/37c8432e68.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Sweet Alert FORMULARIO https://sweetalert.js.org/-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!--https://animate.style/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    
+  </head>
+
+  <body>
+    <!--MENÚ NAVEGACIÓN RESPONSIVE (mas o menos, creo que cuando agregue el formulario me modifico algo del ménu, pense en poner el formulario como IFrame pero no me dio el tiempo de verlo de nuevo)-->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index_mv.html"
+            ><img src="/Images/Logo_color.svg" width="110"
+          /></a>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="index_mv.html">INICIO</a></li>
+          <li><a href="product_mv.html">PRODUCTOS</a></li>
+          <li><a href="about_mv.html">ABOUT</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </span>
+        </ul>
+      </nav>
+      <div class="blur"></div>
+    </header>
+
+    <main>
+      <section class="grid1">
+        <div class="about_img">
+          <img src="/Images/SVG/etiqueta-.svg" width="400" alt="" />
+
+          <h3>
+            "Buscamos crear un producto que sea ideal para una juntada con
+            amigos, con seres queridos, o con quien prefieras pasar un tiempo de
+            relax"
+          </h3>
+        </div>
+        <div class="about_text">
+          <h1>Sobre Monte Verde</h1>
+          <br />
+
+          <br />
+          <h2>Marca e idea conceptual</h2>
+          <br />
+
+          <p>
+            El nombre <b>«Monte Verde»</b> es de tipo descriptivo simbólico,
+            haciendo referencia a los valores y actividades de la empresa,
+            siempre relacionado al origen natural de la reserva. Se realizó la
+            selección del nombre luego de un profundo análisis que incluyó
+            criterios claves como la brevedad, pronunciabilidad y sugestión,
+            entre otros.
+            <br />
+            <br />
+
+            El desarrollo visual de la marca corresponde a un logotipo con
+            accesorios en forma de hojas con bajo grado de iconicidad. Se partió
+            de una tipografía existente a la cual se le realizaron
+            modificaciones. Se utilizó la tipografía
+            <a
+              href="https://www.behance.net/gallery/120339625/FREE-Bavista-Soulvare-A-Modern-Chic-Display-Font"
+            >
+              «Bavista Soulvare» </a
+            >como base del proyecto y se le realizaron modificaciones de ejes,
+            terminaciones y otras correcciones referidas a problemas ópticos.
+            <br /><br />
+            Los valores que quiere representar la marca son la sustentabilidad,
+            el medio ambiente, el bienestar, la convivencia, entre otros. Se
+            logró una propuesta sencilla, ampliamente comunicativa y atractiva
+            adecuada a nuestro público objetivo y productos.
+          </p>
+        </div>
+        <div class="blobs-0"></div>
+        <div class="blobs-1"></div>
+        <div class="about_destacar">
+          <p>
+            Monte Verde busca unir las diferencias de las personas,
+            pensamientos, personalidades en un solo producto que los acompaña en
+            un momento de confianza, las relaciona y les da esa excusa para
+            tomarse un rato, juntarse y charlar; un espacio para la amistad.
+          </p>
+          <!--AGREGAR ONDA SEPARADORA-->
+          <div class="ondi">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="about_form">
+          <div class="form-1">
+            
+            <h4>Sigamos compartiendo</h4>
+            <p>
+              Para nosotros la comunicación es esencial. Dejanos tu mensaje y
+              nos pondremos en contacto contigo.
+            </p>
+            <form action="" id="formulario" method="get">
+              <div class="field">
+                <input id="nombre" 
+                name="nombre" type="text" placeholder="Tu nombre"  />
+                </div>
+                <div class="field">
+                <input 
+               id="email" 
+               name="email" type="email" placeholder="Dirección de email" />
+              </div>
+              <div class="field textarea">
+                <textarea
+                id="mensaje"  name="mensaje"
+                  
+                  placeholder="Tu Mensaje"
+                  
+                ></textarea>
+              </div>
+              <div class="field">
+                <button type="submit" id="btn">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <iframe class="footer" src="/html/footer.html" title="we"></iframe>
+    </footer>
+    <!--js-->
+    <script src="/Javascript/form-1.js"></script>
+    <script src="/Javascript/js_menu_MV.js"></script>
+
+   
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!--   PÁGINA CON UN SOLO CORTE, FontAwesome, Google Font, etiquetas semánticas, transiciones, animación (animate.css), Footer IFrame, 
+
+mensaje para el profesor: esta fue la primer pagina que hice, tuve muchas dudas y tiene mucho que mejorar. En la página de “About” aplique grid con tres cortes, animaciones propias y el formulario, creo que esta un poco mejor (espero jajaja). 
+
+-->
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monte Verde</title>
+
+    <!--css y otro-->
+    <link rel="stylesheet" href="/Css/style_menu.css" />
+    <link rel="stylesheet" href="/Css/Style_inicio.css" />
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--iconoMV https://convertico.com/-->
+    <link rel="icon" href="/Images/iconMV.ico" />
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/37c8432e68.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--https://animate.style/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+  </head>
+
+  <body>
+    <!--MENÚ NAVEGACIÓN RESPONSIVE (mas o menos)-->
+    <header>
+      <nav>
+        <div class="logo" >
+          <a href="html/index_MV.html">
+          <img src="/Images/Logo_color.svg" width="110" /></a>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="index_mv.html">INICIO</a></li>
+          <li><a href="Product_mv.html">PRODUCTOS</a></li>
+          <li><a href="about_mv.html">ABOUT</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+          </span>
+        </ul>
+      </nav>
+      <div class="blur"></div>
+       <!--Tuve que agregar un div vacío para poder aplicarle el efecto desenfocado-->
+    </header>
+
+ <!--Secciones-->
+    <section class="monte">
+      <br />
+      <br />
+      <img class="logo-1" src="/Images/Logo_color.svg" alt="Logo Monte Verde" width="75%" />
+<!-- animate.css -->
+      <h1 class="animate__animated animate__fadeIn animate__slow">Encuentros con sabores únicos</h1>
+      <p class="animate__animated animate__fadeIn animate__delay-2s animate__slow">Déjate llevar por lo natural de Monte Verde y dale un break a tu día</p>
+    </section>
+    <section class="beneficios">
+       <!--Separadores de https://www.shapedivider.app/ -->
+      <div class="onda">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <ul class="lista">
+        <li id="item1" >Refrescante</li>
+        <li id="item2">Regional</li>
+        <li id="item3">Natural & Orgánico</li>
+
+      </ul>
+      <div class="onda-1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    </section>
+    <section class="productos">
+      <h2><a href="/Html/product_mv.html">Conoce más sobre nuestros productos</a></h2>
+      <p>
+        Todos nuestros productos nacen inspirados en la vitalidad de la Reserva Villavicencio, desde sus plantas autóctonas a su buena gente, es por eso que Monte Verde eligió el compromiso de proteger este legado, y queremos que vos hagas lo mismo con tu mente, cuerpo y alma, así como con los tuyos. 100% chamuyo!
+      </p>
+
+      <a href="/Html/product_mv.html"><img  src="/Images/SVG/SVG/vasitos.svg" alt="" width="200"></a>
+    </section>
+   
+     
+    <!--Footer como iframe -->
+   <footer>
+      <iframe  class="footer" src="/html/footer.html" title="we"></iframe>
+    </footer>
+
+    <!--js-->
+    <script src="/Javascript/js_menu_MV.js"></script>
+  </body>
+ 
+</html>

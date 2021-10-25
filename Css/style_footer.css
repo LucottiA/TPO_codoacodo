@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: quicksand;
+    font-weight: 600;
+  
+}
+.base {
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    /*box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+        backdrop-filter: blur(8px) ;
+        border: 1px solid rgba(150, 150, 150, 0.404);*/
+}
+.base .socials-footer {
+    text-align:center;
+    color: rgb(255, 255, 255);  padding: 1%;
+}
+
+.base .socials-footer a {
+  
+    font-size: 2rem;
+    color: inherit;
+    background-color: rgb(204, 204, 204);
+   
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+   
+
+}
+
+.base .socials-footer a:hover {
+     background-color: rgb(172, 172, 172);
+ 
+ }
+
+ .fa-facebook-square:hover {color: rgb(31, 128, 255);transition: all 0.2s ease 0s;}
+.fa-twitter-square:hover {color: rgb(49, 138, 255);transition: all 0.2s ease 0s;}
+.fa-instagram-square:hover {color: rgb(252, 69, 206);transition: all 0.2s ease 0s;}
+
+
+.base p{
+    color: rgb(163, 162, 162);
+   
+   display: flex;
+    margin: 0;
+    padding: 1%;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+  align-items: center;
+    
+
+}

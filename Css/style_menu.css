@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999; /*magico*/  /*magico*/
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(255, 255, 255, 0.534);
+    color: rgb(87, 87, 87);
+    display: flex;
+    
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.247);
+    border: 1px solid rgba(255, 255, 255, 0.404);
+
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    padding-inline: 25%;
+    margin: 0px 10px;
+    border-radius: 10px;
+
+    
+    
+}
+nav .mainMenu li a {
+    padding: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    top: 30px;
+    justify-content: space-evenly;
+    color: rgb(87, 87, 87);
+    font-size: 1.2rem;
+   
+}
+nav .mainMenu li a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px #00000070;
+    transition: all 0.3s ease 0.3s;
+    font-size: 1.3rem;
+    
+   
+}
+
+nav .openMenu, i {
+    font-size: 2rem;
+    
+    display: none;
+    cursor: pointer;
+   
+    
+}
+/*nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}*/
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-bars{
+    position: fixed;
+    top: 30px;
+    left: 85%;
+} 
+.fa-times{
+    position: fixed;
+    top: 30px;
+    left: 87%;
+    /*border: 10px white solid;
+    background: white; mmmm no es buena idea */
+    
+} 
+.fa-facebook:hover {color: rgb(0, 110, 255);transition: all 0.2s ease 0s; text-shadow: 2px 2px 5px #0000005e;}
+.fa-twitter:hover {color: rgb(86, 154, 243);transition: all 0.2s ease 0s;text-shadow: 2px 2px 5px #0000005e;}
+.fa-instagram:hover {color: rgb(255, 0, 191);transition: all 0.2s ease 0s;text-shadow: 2px 2px 5px #0000005e;}
+
+
+nav .logo {
+    margin: 15px;
+
+    cursor: pointer;
+}
+
+.blur { /*barra trucha para el blur*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1111;
+    padding: 46px;
+    font-family: 'Montserrat', sans-serif;
+   
+    display: flex;
+    backdrop-filter: blur(10px) ;
+}
+
+
+@media(max-width: 800px){
+ 
+    nav .mainMenu {
+        height: 90%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.479); 
+        transition: top 1s ease;
+        display: none;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.445);
+        backdrop-filter: blur(8px) ;
+        border: 1px solid rgba(255, 255, 255, 0.404);
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+        
+    }
+    nav .mainMenu li {
+        padding: 15%;
+        overflow: hidden;
+     
+    }
+  
+   
+
+    .icons i {
+        display: inline-block;
+        
+        padding: 3rem 1rem;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
